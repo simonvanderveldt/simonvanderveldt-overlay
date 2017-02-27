@@ -1,15 +1,10 @@
-# Copyright 1999-2014 Gentoo Foundation
-# Distributed under the terms of the GNU General Public License v2
-# $Header: $
+EAPI=6
 
-EAPI="5"
-
-inherit git-2
+inherit git-r3
 
 DESCRIPTION="Offers quick command-line access to files and directories, inspired by autojump, z and v"
-EGIT_REPO_URI="git://github.com/clvv/fasd.git"
 HOMEPAGE="https://github.com/clvv/fasd"
-
+EGIT_REPO_URI="git://github.com/clvv/fasd.git"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"

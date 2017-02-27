@@ -1,14 +1,15 @@
-EAPI=5
+EAPI=6
 
 inherit git-r3 eutils
 
 DESCRIPTION="A significant reboot of Seq24, with additional features and bug fixes"
 HOMEPAGE="https://github.com/ahlstromcj/sequencer64"
 EGIT_REPO_URI="https://github.com/ahlstromcj/sequencer64.git"
-IUSE="jack jack-session lash"
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64"
+
+IUSE="jack jack-session lash"
 
 RDEPEND=">=dev-cpp/gtkmm-2.4:2.4
 	>=dev-libs/libsigc++-2.2:2
@@ -18,10 +19,9 @@ RDEPEND=">=dev-cpp/gtkmm-2.4:2.4
 
 DEPEND="${RDEPEND}"
 
-DOCS=( ChangeLog README )
-
 src_prepare()
 {
+  default
   ./bootstrap
 }
 

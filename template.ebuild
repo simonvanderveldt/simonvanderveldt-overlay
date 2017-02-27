@@ -1,0 +1,16 @@
+EAPI=6
+
+inherit
+
+DESCRIPTION=""
+HOMEPAGE=""
+SRC_URI="https://"
+EGIT_REPO_URI="https://"
+LICENSE=""
+SLOT="0"
+KEYWORDS="~amd64"
+
+IUSE=""
+
+RDEPEND=""
+DEPEND="${RDEPEND}"

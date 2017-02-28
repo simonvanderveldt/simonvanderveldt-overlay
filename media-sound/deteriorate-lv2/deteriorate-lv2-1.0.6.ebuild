@@ -14,9 +14,9 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="dev-cpp/gtkmm:2.4
-  x11-libs/gtk+:2
-  x11-libs/cairo
-  media-libs/lv2
-  media-libs/lvtk[gtk2]"
+	x11-libs/gtk+:2
+	x11-libs/cairo
+	media-libs/lv2
+	media-libs/lvtk[gtk2]"
 
 DEPEND="${RDEPEND}"

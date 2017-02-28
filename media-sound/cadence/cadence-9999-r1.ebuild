@@ -10,21 +10,20 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE="-pulseaudio a2jmidid capture"
+IUSE="-pulseaudio a2jmidid"
 
 RDEPEND="=media-sound/jack-audio-connection-kit-1.9.10
-  dev-python/PyQt4
-  dev-python/dbus-python
-  >=media-sound/ladish-9999
-  a2jmidid? ( media-sound/a2jmidid )
-  capture? ( media-sound/jack_capture )
-  pulseaudio? ( media-sound/pulseaudio[jack] )"
+	dev-python/PyQt4
+	dev-python/dbus-python
+	>=media-sound/ladish-9999
+	a2jmidid? ( media-sound/a2jmidid )
+	pulseaudio? ( media-sound/pulseaudio[jack] )"
 DEPEND=${RDEPEND}
 
 src_compile() {
-  emake PREFIX="/usr"
+	emake PREFIX="/usr"
 }
 
 src_install() {
-  emake PREFIX="/usr" DESTDIR="${D}" install
+	emake PREFIX="/usr" DESTDIR="${D}" install
 }

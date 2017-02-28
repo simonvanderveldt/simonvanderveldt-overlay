@@ -9,11 +9,13 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE="jack jack-session lash"
+IUSE="jack jacksession lash"
+
+REQUIRED_USE="jacksession? ( jack )"
 
 RDEPEND=">=dev-cpp/gtkmm-2.4:2.4
 	>=dev-libs/libsigc++-2.2:2
-  media-libs/libpng
+	media-libs/libpng:=
 	jack? ( media-sound/jack-audio-connection-kit )
 	lash? ( media-sound/lash )"
 
@@ -21,15 +23,15 @@ DEPEND="${RDEPEND}"
 
 src_prepare()
 {
-  default
-  ./bootstrap
+	default
+	./bootstrap
 }
 
 src_configure()
 {
 	local -a myeconfargs=(
 		$(use_enable jack)
-    $(use_enable jack-session)
+		$(use_enable jacksession)
 		$(use_enable lash)
 	)
 	econf "${myeconfargs[@]}"

@@ -1,0 +1,9 @@
+sudo: required
+
+language: generic
+
+services:
+  - docker
+
+script:
+  - "docker run --rm -ti -v $(pwd):/overlay -w /overlay gentoo/stage3-amd64 /overlay/tests/runtests.sh"

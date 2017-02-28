@@ -1,0 +1,8 @@
+version: '2'
+services:
+  tests:
+    image: gentoo/stage3-amd64
+    volumes:
+      - "../:/overlay"
+    working_dir: "/overlay"
+    command: /overlay/tests/runtests.sh

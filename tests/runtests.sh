@@ -8,7 +8,7 @@ export FEATURES="-news" PORTAGE_RSYNC_EXTRA_OPTS="-q"
 emerge --sync
 emerge -q --buildpkg --usepkg dev-vcs/git dev-python/lxml
 # Install fork or repoman with failing tests that are irrelevant for overlays stripped out
-ebuild tests/app-portage/repoman/repoman-2.3.1.ebuild manifest clean merge
+ebuild tests/app-portage/repoman/repoman-2.3.1.ebuild manifest clean merge  > /dev/null
 
 # Run the tests
 repoman full --xmlparse

@@ -1,0 +1,17 @@
+branches:
+  only:
+    - master
+
+sudo: required
+
+language: generic
+
+services:
+  - docker
+
+cache:
+  directories:
+  - $HOME/.portage
+
+script:
+  - "docker run --rm -ti -v $HOME/.portage:/usr/portage -v $PWD:/overlay -w /overlay gentoo/stage3-amd64 /overlay/tests/runtests.sh"

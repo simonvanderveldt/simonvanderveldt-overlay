@@ -11,4 +11,4 @@ emerge -q --buildpkg --usepkg dev-vcs/git dev-python/lxml
 ebuild tests/app-portage/repoman/repoman-2.3.1.ebuild manifest clean merge
 
 # Run the tests
-repoman full
+repoman full --xmlparse

@@ -1,0 +1,8 @@
+github_repo = "simonvanderveldt/simonvanderveldt-overlay"
+check_interval = 24
+
+[projects]
+Carla = "https://github.com/falkTX/Carla"
+deteriorate-lv2 = "https://github.com/blablack/deteriorate-lv2"
+fasd = "https://github.com/clvv/fasd"
+sequencer64 = "https://github.com/ahlstromcj/sequencer64"

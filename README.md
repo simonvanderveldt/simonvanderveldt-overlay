@@ -25,6 +25,7 @@ If you run into problems please [create an issue](https://github.com/simonvander
 - GitHub's [branch protection](https://help.github.com/articles/about-protected-branches/) is enabled for the `master` branch
 - Changes can only be done using [pull requests](https://help.github.com/articles/about-pull-requests/)
 - Pull requests can only be merged if they pass the automated tests, which are run by [Travis CI](https://travis-ci.org)
+- [Travis CI](https://travis-ci.org) also runs daily checks if a new version of one of the packages in this overlay is released. If so, an issue requesting a version bump will be created
 
 ## Automated tests
 The following tests are run for every pull request:

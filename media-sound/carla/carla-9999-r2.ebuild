@@ -12,7 +12,7 @@ LICENSE="GPL-2 LGPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE="qt5 alsa -pulseaudio X osc sf2 gig sfz +rdf zlib gtk gtk2 -distrho-prom -zynaddsubfx -zynaddsubfx-ui +hylia"
+IUSE="qt5 alsa -pulseaudio X osc sf2 gig sfz +rdf zlib gtk gtk2 -distrho-prom -zynaddsubfx -zynaddsubfx-ui -hylia"
 
 RDEPEND="!qt5? ( dev-python/PyQt4[X,svg] )
 	qt5? ( dev-python/PyQt5 )

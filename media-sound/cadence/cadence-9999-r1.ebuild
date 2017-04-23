@@ -8,7 +8,7 @@ HOMEPAGE="http://kxstudio.linuxaudio.org/"
 EGIT_REPO_URI="https://github.com/falkTX/Cadence.git"
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 
 IUSE="-pulseaudio a2jmidid"
 

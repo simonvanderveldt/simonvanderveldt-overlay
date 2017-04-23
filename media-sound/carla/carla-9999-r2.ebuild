@@ -10,7 +10,7 @@ HOMEPAGE="http://kxstudio.linuxaudio.org/Applications:Carla"
 EGIT_REPO_URI="https://github.com/falkTX/Carla.git"
 LICENSE="GPL-2 LGPL-3"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 
 IUSE="qt5 alsa -pulseaudio X osc sf2 gig sfz +rdf zlib gtk gtk2 -distrho-prom -zynaddsubfx -zynaddsubfx-ui -hylia"
 

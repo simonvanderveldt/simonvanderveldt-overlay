@@ -7,7 +7,7 @@ HOMEPAGE="https://github.com/clvv/fasd"
 EGIT_REPO_URI="git://github.com/clvv/fasd.git"
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 
 src_install() {
 	emake DESTDIR="${D}" PREFIX="${EPREFIX}/usr" install

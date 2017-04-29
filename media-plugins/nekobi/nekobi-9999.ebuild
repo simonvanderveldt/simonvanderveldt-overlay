@@ -9,17 +9,17 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS=""
 
-IUSE="X dssi +lv2 vst standalone"
+IUSE="+X dssi +lv2 vst standalone"
 
 REQUIRED_USE="|| ( dssi lv2 vst standalone )"
 
 X_DEPEND="( media-libs/mesa
 	x11-libs/libX11 )"
 
-RDEPEND="standalone? ( ${X_DEPEND}
+RDEPEND="X? ( ${X_DEPEND} )
+	standalone? ( ${X_DEPEND}
 		virtual/jack )
-	dssi? ( X? ( ${X_DEPEND}
-		media-libs/liblo ) )"
+	dssi? ( X? ( media-libs/liblo ) )"
 
 DEPEND="${RDEPEND}"
 

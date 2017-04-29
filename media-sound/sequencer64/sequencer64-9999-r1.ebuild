@@ -7,7 +7,7 @@ HOMEPAGE="https://github.com/ahlstromcj/sequencer64"
 EGIT_REPO_URI="https://github.com/ahlstromcj/sequencer64.git"
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 
 IUSE="jack jacksession lash"
 

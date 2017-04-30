@@ -18,7 +18,7 @@ RDEPEND="!qt5? ( dev-python/PyQt4[X,svg] )
 	qt5? ( dev-python/PyQt5 )
 	gtk? ( x11-libs/gtk+:3 )
 	gtk2? ( x11-libs/gtk+:2 )
-	media-sound/jack-audio-connection-kit
+	virtual/jack
 	alsa? ( media-libs/alsa-lib )
 	pulseaudio? ( media-sound/pulseaudio )
 	X? ( x11-base/xorg-server )

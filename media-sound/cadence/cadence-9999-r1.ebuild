@@ -12,7 +12,7 @@ KEYWORDS=""
 
 IUSE="-pulseaudio a2jmidid"
 
-RDEPEND="=media-sound/jack-audio-connection-kit-1.9.10
+RDEPEND="virtual/jack
 	dev-python/PyQt4
 	dev-python/dbus-python
 	>=media-sound/ladish-9999

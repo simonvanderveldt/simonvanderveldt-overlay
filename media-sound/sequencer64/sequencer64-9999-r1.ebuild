@@ -16,7 +16,7 @@ REQUIRED_USE="jacksession? ( jack )"
 RDEPEND=">=dev-cpp/gtkmm-2.4:2.4
 	>=dev-libs/libsigc++-2.2:2
 	media-libs/libpng:=
-	jack? ( media-sound/jack-audio-connection-kit )
+	jack? ( virtual/jack )
 	lash? ( media-sound/lash )"
 
 DEPEND="${RDEPEND}"

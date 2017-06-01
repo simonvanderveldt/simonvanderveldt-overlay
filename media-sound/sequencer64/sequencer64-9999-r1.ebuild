@@ -1,13 +1,20 @@
 EAPI=6
 
-inherit git-r3 eutils
+inherit eutils
 
 DESCRIPTION="A significant reboot of Seq24, with additional features and bug fixes"
 HOMEPAGE="https://github.com/ahlstromcj/sequencer64"
-EGIT_REPO_URI="https://github.com/ahlstromcj/sequencer64.git"
+if [[ ${PV} == *9999 ]]; then
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/ahlstromcj/sequencer64.git"
+	KEYWORDS=""
+else
+	SRC_URI="https://github.com/ahlstromcj/sequencer64/archive/${PV}.tar.gz -> ${P}.tar.gz"
+	KEYWORDS="~amd64"
+fi
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
+RESTRICT="mirror"
 
 IUSE="jack jacksession lash"
 
@@ -31,7 +38,7 @@ src_configure()
 {
 	local -a myeconfargs=(
 		$(use_enable jack)
-		$(use_enable jacksession)
+		$(use_enable jacksession jack-session)
 		$(use_enable lash)
 	)
 	econf "${myeconfargs[@]}"

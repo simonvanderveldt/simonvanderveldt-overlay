@@ -3,8 +3,6 @@
 
 EAPI=6
 
-inherit git-r3
-
 DESCRIPTION="Fully-featured audio plugin host, supports many audio drivers and plugin formats"
 HOMEPAGE="http://kxstudio.linuxaudio.org/Applications:Carla"
 if [[ ${PV} == *9999 ]]; then
@@ -12,8 +10,12 @@ if [[ ${PV} == *9999 ]]; then
 	EGIT_REPO_URI="https://github.com/falkTX/Carla.git"
 	KEYWORDS=""
 else
-	SRC_URI="https://github.com/falkTX/Carla/archive/${PV}.tar.gz -> ${P}.tar.gz"
+	MY_PN="Carla"
+	MY_PV="1.9.7b"
+	MY_P="${MY_PN}-${MY_PV}"
+	SRC_URI="https://github.com/falkTX/${MY_PN}/archive/${MY_PV}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="~amd64"
+	S="${WORKDIR}/${MY_P}"
 fi
 LICENSE="GPL-2 LGPL-3"
 SLOT="0"

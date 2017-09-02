@@ -28,7 +28,8 @@ RDEPEND="!qt5? ( dev-python/PyQt4[X,svg] )
 	alsa? ( media-libs/alsa-lib )
 	pulseaudio? ( media-sound/pulseaudio )
 	X? ( x11-base/xorg-server )
-	osc? ( media-libs/liblo )
+	osc? ( media-libs/liblo
+		media-libs/pyliblo )
 	sf2? ( media-sound/fluidsynth )
 	gig? ( media-sound/linuxsampler )
 	sfz? ( media-sound/linuxsampler )
@@ -72,5 +73,8 @@ src_compile() {
 }
 
 src_install() {
-	emake PREFIX="/usr" DESTDIR="${D}" "${myemakeargs[@]}" install
+	emake DESTDIR="${D}" PREFIX="/usr" "${myemakeargs[@]}" install
+	if ! use osc; then
+		find "${D}/usr" -iname "carla-control*" | xargs rm
+	fi
 }

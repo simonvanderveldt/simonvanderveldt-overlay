@@ -6,14 +6,14 @@ inherit git-r3
 DESCRIPTION="Collection of tools useful for audio production"
 HOMEPAGE="http://kxstudio.linuxaudio.org/"
 EGIT_REPO_URI="https://github.com/falkTX/Cadence.git"
+KEYWORDS=""
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
 
 IUSE="-pulseaudio a2jmidid"
 
 RDEPEND="virtual/jack
-	dev-python/PyQt4
+	dev-python/PyQt4[X,svg]
 	dev-python/dbus-python
 	>=media-sound/ladish-9999
 	a2jmidid? ( media-sound/a2jmidid )

@@ -44,8 +44,6 @@ RDEPEND="!qt5? ( dev-python/PyQt4[X,svg] )
 	zynaddsubfx-ui? ( x11-libs/fltk )"
 DEPEND=${RDEPEND}
 
-PATCHES=( "${FILESDIR}/${PN}-fix-xdg-desktop-categories.patch" )
-
 src_compile() {
 	myemakeargs=(
 		USE_COLORS=false

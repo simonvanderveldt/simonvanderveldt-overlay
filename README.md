@@ -1,6 +1,7 @@
 # simonvanderveldt-overlay [![Build Status](https://travis-ci.org/simonvanderveldt/simonvanderveldt-overlay.svg?branch=master)](https://travis-ci.org/simonvanderveldt/simonvanderveldt-overlay)
 
-Overlay with applications that aren't available upstream or in other overlays, mainly music creation related.
+Overlay with applications that aren't available upstream or in other overlays.
+The music/pro-audio packages have all been moved to the [audio-overlay](https://github.com/gentoo-audio/audio-overlay).
 
 ## How to use this overlay
 - Add an entry to [`/etc/portage/repos.conf`](https://wiki.gentoo.org/wiki//etc/portage/repos.conf):

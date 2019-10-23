@@ -2,6 +2,7 @@ github_repo = "simonvanderveldt/simonvanderveldt-overlay"
 check_interval = 24
 
 [projects]
+direnv = "https://github.com/direnv/direnv"
 fasd = "https://github.com/clvv/fasd"
 mverb = "https://github.com/DISTRHO/MVerb.git"
 nekobi = "https://github.com/DISTRHO/Nekobi.git"

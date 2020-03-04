@@ -6,7 +6,6 @@
 		<name>Simon van der Veldt</name>
 	</maintainer>
 	<use>
-		<flag name="caja">Enable integration with mate-base/caja</flag>
 		<flag name="nautilus">Enable integration with gnome-base/nautilus</flag>
 	</use>
 </pkgmetadata>

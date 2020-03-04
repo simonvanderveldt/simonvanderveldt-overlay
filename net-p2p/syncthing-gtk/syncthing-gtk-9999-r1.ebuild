@@ -22,7 +22,7 @@ fi
 LICENSE="GPL-2"
 SLOT="0"
 
-IUSE="libnotify nautilus caja"
+IUSE="libnotify nautilus"
 
 DEPEND=""
 RDEPEND="
@@ -35,7 +35,7 @@ RDEPEND="
 		>=net-p2p/syncthing-0.13
 		libnotify? ( x11-libs/libnotify )
 		nautilus? ( dev-python/nautilus-python[${PYTHON_SINGLE_USEDEP}] )
-		caja? ( $(python_gen_cond_dep 'dev-python/python-caja[${PYTHON_MULTI_USEDEP}]') )"
+"
 
 pkg_postinst() {
 	xdg_desktop_database_update

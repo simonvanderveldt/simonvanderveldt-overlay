@@ -1,4 +1,4 @@
-EAPI=6
+EAPI=8
 
 DESCRIPTION="Quick command-line access to files and directories, inspired by autojump z and v"
 HOMEPAGE="https://github.com/clvv/fasd"

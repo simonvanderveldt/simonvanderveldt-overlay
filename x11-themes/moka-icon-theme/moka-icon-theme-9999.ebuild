@@ -1,6 +1,6 @@
 EAPI=8
 
-inherit meson
+inherit meson xdg
 
 DESCRIPTION="A stylized icon set created with simplicity in mind"
 HOMEPAGE="https://snwh.org/moka"

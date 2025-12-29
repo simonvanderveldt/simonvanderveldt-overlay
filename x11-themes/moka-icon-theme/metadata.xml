@@ -6,6 +6,6 @@
 		<name>Simon van der Veldt</name>
 	</maintainer>
 	<upstream>
-		<remote-id type="github">snwh/moka-icon-theme</remote-id>
+		<remote-id type="github">UbuntuBudgie/moka-icon-theme</remote-id>
 	</upstream>
 </pkgmetadata>

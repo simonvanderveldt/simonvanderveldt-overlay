@@ -1,6 +1,6 @@
 EAPI=8
 
-inherit meson
+inherit meson xdg
 
 DESCRIPTION="Minimal set of icons to serve as a base for other themes (such as Moka)"
 HOMEPAGE="https://snwh.org/moka#faba-icon-theme"

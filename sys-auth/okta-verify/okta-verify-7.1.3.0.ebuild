@@ -32,7 +32,6 @@ src_install() {
   doins -r opt/
   doins -r usr/
 
-  # TODO This doesn't work for some reason
   fowners root:okta-ff /etc/okta
   fperms 1775 /etc/okta
 
